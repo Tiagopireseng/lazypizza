@@ -1,0 +1,175 @@
+{
+  "users": [
+    { "id": 1, "name": "Tiago", "password": "123", "isAdmin": true },
+    { "id": 2, "name": "João", "password": "789", "isAdmin": false },
+    { "id": 3, "name": "Maria", "password": "456", "isAdmin": false }
+  ],
+  "ingredients": [
+    {
+      "id": 1,
+      "name": "Molho"
+    },
+    {
+      "id": 2,
+      "name": "Queijo Mussarela"
+    },
+    {
+      "id": 3,
+      "name": "Tomate"
+    },
+    {
+      "id": 4,
+      "name": "Orégano"
+    },
+    {
+      "id": 5,
+      "name": "Frango"
+    },
+    {
+      "id": 6,
+      "name": "Calabresa"
+    },
+    {
+      "id": 7,
+      "name": "Catupiry"
+    },
+    {
+      "id": 8,
+      "name": "Cebola"
+    },
+    {
+      "id": 9,
+      "name": "Atum"
+    },
+    {
+      "id": 10,
+      "name": "Presunto"
+    },
+    {
+      "id": 11,
+      "name": "Ovo"
+    },
+    {
+      "id": 12,
+      "name": "Palmito"
+    },
+    {
+      "id": 13,
+      "name": "Ervilha"
+    },
+    {
+      "id": 14,
+      "name": "Brocolis"
+    },
+    {
+      "id": 15,
+      "name": "Bacon"
+    },
+    {
+      "id": 16,
+      "name": "Azeitona"
+    },
+    {
+      "id": 17,
+      "name": "Camarão"
+    },
+    {
+      "id": 18,
+      "name": "Pimentão"
+    },
+    {
+      "id": 19,
+      "name": "Aliche"
+    },
+    {
+      "id": 20,
+      "name": "Queijo Cheddar"
+    },
+    {
+      "id": 21,
+      "name": "Queijo Provolone"
+    },
+    {
+      "id": 22,
+      "name": "Requeijão Cremoso"
+    },
+    {
+      "id": 23,
+      "name": "Cream Cheese"
+    },
+    {
+      "id": 24,
+      "name": "Carne Moida"
+    },
+    {
+      "id": 25,
+      "name": "Doce de leite"
+    },
+    {
+      "id": 26,
+      "name": "Chocolate"
+    },
+    {
+      "id": 27,
+      "name": "Chocolate Branco"
+    },
+    {
+      "id": 28,
+      "name": "Leite ninho"
+    },
+    {
+      "id": 29,
+      "name": "Chocolate Amargo"
+    },
+    {
+      "id": 30,
+      "name": "Granulado"
+    },
+    {
+      "id": 31,
+      "name": "Banana"
+    },
+    {
+      "id": 32,
+      "name": "Morango"
+    },
+    {
+      "id": 33,
+      "name": "Danoninho"
+    }
+  ],
+  "pizza": [
+    {
+      "name": "Calabresa",
+      "ingredients": ["Tomate"],
+      "type": "Pizza",
+      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
+      "id": 4
+    },
+    {
+      "name": "Batata",
+      "ingredients": ["Frango"],
+      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
+      "id": 6
+    },
+    {
+      "name": "Lombo Canadense",
+      "ingredients": ["Orégano", "Frango"],
+      "type": "Pizza",
+      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
+      "id": 7
+    },
+    {
+      "name": "Marguerita",
+      "ingredients": ["Molho", "Queijo Mussarela", "Orégano"],
+      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
+      "id": 8
+    },
+    {
+      "name": "Calabresa",
+      "ingredients": ["Queijo Mussarela", "Tomate", "Orégano"],
+      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
+      "id": 9
+    }
+  ]
+}

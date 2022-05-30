@@ -1,0 +1,21 @@
+<app-header></app-header>
+<!-- <img
+  src="../../../assets/images/pizzaoven.jpg"
+  alt="bacckground"
+  class="background-img"
+/> -->
+<div class="box">
+  <form [formGroup]="loginForm" class="flex-container">
+    <h2>Login</h2>
+
+    <mat-form-field appearance="fill">
+      <mat-label>User name</mat-label>
+      <input formControlName="name" matInput placeholder="" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input formControlName="password" matInput placeholder="" />
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="login()">Submit</button>
+  </form>
+</div>
