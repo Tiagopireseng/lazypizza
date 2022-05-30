@@ -1,8 +1,23 @@
 {
   "users": [
-    { "id": 1, "name": "Tiago", "password": "123", "isAdmin": true },
-    { "id": 2, "name": "João", "password": "789", "isAdmin": false },
-    { "id": 3, "name": "Maria", "password": "456", "isAdmin": false }
+    {
+      "id": 1,
+      "name": "Tiago",
+      "password": "123",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "name": "João",
+      "password": "789",
+      "isAdmin": false
+    },
+    {
+      "id": 3,
+      "name": "Maria",
+      "password": "456",
+      "isAdmin": false
+    }
   ],
   "ingredients": [
     {
@@ -141,33 +156,30 @@
   "pizza": [
     {
       "name": "Calabresa",
-      "ingredients": ["Tomate"],
+      "ingredients": [
+        "Tomate"
+      ],
       "type": "Pizza",
       "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
       "id": 4
     },
     {
-      "name": "Batata",
-      "ingredients": ["Frango"],
+      "name": "Panqueca",
+      "ingredients": [
+        "Orégano",
+        "Frango",
+        "Calabresa"
+      ],
       "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
       "id": 6
     },
     {
-      "name": "Lombo Canadense",
-      "ingredients": ["Orégano", "Frango"],
-      "type": "Pizza",
-      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
-      "id": 7
-    },
-    {
-      "name": "Marguerita",
-      "ingredients": ["Molho", "Queijo Mussarela", "Orégano"],
-      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
-      "id": 8
-    },
-    {
       "name": "Calabresa",
-      "ingredients": ["Queijo Mussarela", "Tomate", "Orégano"],
+      "ingredients": [
+        "Queijo Mussarela",
+        "Tomate",
+        "Orégano"
+      ],
       "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
       "id": 9
     }

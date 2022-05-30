@@ -18,6 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { UserloginService } from '../services/userlogin.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderModule } from '../header/header.module';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -30,6 +31,7 @@ import { HeaderModule } from '../header/header.module';
     MatButtonModule,
     HttpClientModule,
     HeaderModule,
+    MatCardModule,
   ],
   providers: [UserloginService],
 })

@@ -1,2 +1,25 @@
 <app-header></app-header>
-<p>pizzadisplay works!</p>
+<div
+  class="hero__video-inner"
+  style="width: 100%; height: 935px; margin-top: 5px"
+>
+  <iframe
+    src="//player.vimeo.com/video/165492949?title=0&amp;byline=0&amp;portrait=0&amp;color=3a6774&amp;autoplay=1&amp;loop=1&amp;background=1"
+    width="100%"
+    height="100%"
+    title="Vimeo Video"
+    frameborder="0"
+    data-ready="true"
+    data-audioeye-media=""
+    data-audioeye-vimeo=""
+    id="myVideo"
+  ></iframe>
+</div>
+<div class="flexbox-container">
+  <app-pizzacard
+    *ngFor="let pizzaObj of pizzaList; let i = index"
+    [pizza]="pizzaObj"
+    (deletePizzaID)="deletePizza($event)"
+    [ingredientsList]="ingredientsList"
+  ></app-pizzacard>
+</div>
