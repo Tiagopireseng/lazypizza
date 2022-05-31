@@ -88,6 +88,7 @@ export class PizzadisplayComponent implements OnInit {
         alert('Product deleted successfully');
         this.pizzaList = this.pizzaList.filter((res, index) => index !== id);
         console.log(this.pizzaList);
+        this.getAllPizzas();
       },
       error: (err) => {
         alert('Error deleting product');

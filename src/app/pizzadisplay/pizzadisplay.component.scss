@@ -5,15 +5,15 @@
 
 .position {
   position: absolute;
-  top: 20%;
+  top: 10%;
 }
 
 .flexbox-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
+  align-content: space-around;
 }
 
 .addButton {

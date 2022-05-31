@@ -18,9 +18,15 @@ import { MatCardModule } from '@angular/material/card';
 import { ApiService } from '../services/api.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { MaterialElevationDirective } from './hover-elevation.directive';
 
 @NgModule({
-  declarations: [PizzadisplayComponent, PizzacardComponent, DialogComponent],
+  declarations: [
+    PizzadisplayComponent,
+    PizzacardComponent,
+    DialogComponent,
+    MaterialElevationDirective,
+  ],
   imports: [
     CommonModule,
     HttpClientModule,
