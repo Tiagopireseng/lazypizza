@@ -21,6 +21,7 @@
       *ngFor="let pizzaObj of pizzaList; let i = index"
       [pizza]="pizzaObj"
       (deletePizzaID)="deletePizza($event)"
+      (Update)="updateEvent($event)"
       [ingredientsList]="ingredientsList"
     ></app-pizzacard>
   </div>

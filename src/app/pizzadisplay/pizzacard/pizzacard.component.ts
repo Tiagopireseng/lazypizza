@@ -15,6 +15,7 @@ export class PizzacardComponent implements OnInit {
   @Input() ingredientsList: Ingredient[] = [];
 
   @Output() deletePizzaID = new EventEmitter<number>();
+  @Output() Update = new EventEmitter<string>();
 
   imageUrl: string = '';
 
@@ -32,6 +33,10 @@ export class PizzacardComponent implements OnInit {
     this.deletePizzaIDEvent(this.pizza.id);
   }
 
+  updateEvent(value: string) {
+    this.Update.emit(value);
+  }
+
   editPizza(ingredientsList: Ingredient[], Pizza: Pizza): void {
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '500px',
@@ -44,7 +49,7 @@ export class PizzacardComponent implements OnInit {
     console.log(Pizza);
     dialogRef.afterClosed().subscribe((result) => {
       // Console log result
-      console.log(result);
+      this.updateEvent('trigger');
     });
   }
 }

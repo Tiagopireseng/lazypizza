@@ -151,6 +151,10 @@
     {
       "id": 33,
       "name": "Danoninho"
+    },
+    {
+      "name": "Salmão",
+      "id": 35
     }
   ],
   "pizza": [
@@ -164,17 +168,7 @@
       "id": 4
     },
     {
-      "name": "Panqueca",
-      "ingredients": [
-        "Orégano",
-        "Frango",
-        "Calabresa"
-      ],
-      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
-      "id": 6
-    },
-    {
-      "name": "Calabresa",
+      "name": "Cará",
       "ingredients": [
         "Queijo Mussarela",
         "Tomate",
@@ -191,6 +185,14 @@
       ],
       "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
       "id": 10
+    },
+    {
+      "name": "Bacon",
+      "ingredients": [
+        "Bacon"
+      ],
+      "imageUrl": "https://bhdicas.uai.com.br/wp-content/uploads/sites/23/2017/03/pizza-site-or.jpg",
+      "id": 11
     }
   ]
 }

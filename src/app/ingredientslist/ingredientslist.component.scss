@@ -1,6 +1,6 @@
 html,
 body {
-  background-image: url(pizzaoven.jpg);
+  height: 100vh;
 }
 .box {
   display: grid;
@@ -12,6 +12,11 @@ body {
   background-position: center;
   overflow: hidden;
   padding: 100px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
 }
 
 .addButton {

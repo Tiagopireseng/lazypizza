@@ -4,8 +4,15 @@
   <div class="form">
     <mat-form-field appearance="fill" style="max-width: 300px">
       <mat-label>Add Ingredient</mat-label>
-      <input formControlName="name" matInput placeholder="" type="text" />
+      <input matInput [formControl]="ingredient" placeholder="" type="text" />
     </mat-form-field>
+    <button
+      mat-icon-button
+      color="accent"
+      (click)="addIngredient(ingredient.value)"
+    >
+      <mat-icon>add</mat-icon>
+    </button>
   </div>
   <div class="flex-container">
     <mat-card
@@ -16,7 +23,13 @@
         <mat-card-title style="margin: 5px">{{
           ingredient.name
         }}</mat-card-title>
-        <button mat-icon-button color="warn"><mat-icon>close</mat-icon></button>
+        <button
+          mat-icon-button
+          color="warn"
+          (click)="deleteIngredient(ingredient.id!)"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
       </span>
     </mat-card>
   </div>

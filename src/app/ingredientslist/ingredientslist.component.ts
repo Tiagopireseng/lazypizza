@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Ingredient } from '../pizzadisplay/pizzacard/ingredients';
 import { ApiService } from '../services/api.service';
@@ -10,6 +11,8 @@ import { ApiService } from '../services/api.service';
 })
 export class IngredientslistComponent implements OnInit {
   ingredientsList: Ingredient[] = [];
+  ingredient = new FormControl();
+  newIngredient: Ingredient = { name: '' };
 
   constructor(private router: Router, private api: ApiService) {}
 
@@ -25,6 +28,25 @@ export class IngredientslistComponent implements OnInit {
       },
       error: (err) => {
         console.log(err);
+      },
+    });
+  }
+
+  addIngredient(ingredient: string) {
+    this.newIngredient.name = ingredient;
+    console.log(this.newIngredient);
+    this.api.postIngedient(this.newIngredient).subscribe({
+      next: (res) => {
+        console.log(res);
+        this.getAllIngredients();
+      },
+    });
+  }
+  deleteIngredient(id: number) {
+    this.api.deleteIngredient(id).subscribe({
+      next: (res) => {
+        console.log(res);
+        this.getAllIngredients();
       },
     });
   }

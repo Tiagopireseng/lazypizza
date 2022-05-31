@@ -22,8 +22,8 @@ export class ApiService {
   postPizza(data: Pizza[]) {
     return this.http.post<Pizza[]>(this.pizzaUrl, data);
   }
-  postIngedients(data: Ingredient[]) {
-    return this.http.post<Ingredient[]>(this.ingredientsUrl, data);
+  postIngedient(data: Ingredient) {
+    return this.http.post<Ingredient>(this.ingredientsUrl, data);
   }
   deletePizza(id: number) {
     return this.http.delete(`${this.pizzaUrl}/${id}`);
