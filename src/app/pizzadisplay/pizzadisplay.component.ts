@@ -11,6 +11,7 @@ import {
   Validators,
   FormControl,
 } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pizzadisplay',
@@ -22,14 +23,18 @@ export class PizzadisplayComponent implements OnInit {
   pizzaList: Pizza[] = [];
   ingredientsList: Ingredient[] = [];
 
-  constructor(public dialog: MatDialog, private api: ApiService) {}
+  constructor(
+    public dialog: MatDialog,
+    private api: ApiService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.getAllPizzas();
     this.getAllIngredients();
   }
 
-  openDialog(ingredientsList: any): void {
+  openDialog(ingredientsList: Ingredient[]): void {
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '500px',
       data: {
@@ -38,10 +43,17 @@ export class PizzadisplayComponent implements OnInit {
     });
     console.log(ingredientsList);
     console.log(ingredientsList[0].name);
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
-      this.pizzaList.push(result);
+    dialogRef.afterClosed().subscribe((result: Pizza) => {
+      if (result) {
+        this.pizzaList.push(result);
+        console.log('Result!');
+      }
+      console.log(this.pizzaList);
     });
+  }
+
+  addIngredient() {
+    this.router.navigate(['/ingredientslist']);
   }
 
   getAllPizzas() {

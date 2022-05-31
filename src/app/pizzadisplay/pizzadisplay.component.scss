@@ -1,7 +1,24 @@
+#myVideo {
+  height: 100%;
+  overflow: hidden;
+}
+
+.position {
+  position: absolute;
+  top: 20%;
+}
+
 .flexbox-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
+}
+
+.addButton {
+  position: fixed;
+  z-index: 10000;
+  top: 15px;
+  right: 25px;
 }
