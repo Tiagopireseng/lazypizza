@@ -25,10 +25,6 @@
       "name": "Molho"
     },
     {
-      "id": 2,
-      "name": "Queijo Mussarela"
-    },
-    {
       "id": 3,
       "name": "Tomate"
     },
@@ -145,15 +141,15 @@
       "name": "Banana"
     },
     {
-      "id": 32,
-      "name": "Morango"
-    },
-    {
       "id": 33,
       "name": "Danoninho"
     },
     {
       "name": "Salmão",
+      "id": 34
+    },
+    {
+      "name": "Tomate",
       "id": 35
     }
   ],
@@ -212,37 +208,6 @@
       ],
       "imageUrl": "https://i.ytimg.com/vi/tPs8XjXZCDc/maxresdefault.jpg",
       "id": 16
-    },
-    {
-      "name": "Bosta",
-      "ingredients": [
-        "Orégano",
-        "Calabresa",
-        "Cebola"
-      ],
-      "imageUrl": "https://pbs.twimg.com/media/C3EbhABXEAID7hq.jpg",
-      "id": 17
-    },
-    {
-      "name": "Piroca",
-      "ingredients": [
-        "Molho",
-        "Tomate",
-        "Orégano",
-        "Frango"
-      ],
-      "imageUrl": "https://pbs.twimg.com/media/Ec7mHBEWkAUQrwD.jpg",
-      "id": 18
-    },
-    {
-      "name": "Capiroto",
-      "ingredients": [
-        "Molho",
-        "Queijo Mussarela",
-        "Atum"
-      ],
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaEUJJzdST8CCmjGm2R7wSsYtU64RAvQ6KTXNZDd1MhxIWxiWlONb6XZvSIPeGzKMnG6E&usqp=CAU",
-      "id": 19
     }
   ]
 }

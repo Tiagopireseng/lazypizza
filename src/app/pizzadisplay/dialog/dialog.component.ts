@@ -69,6 +69,7 @@ export class DialogComponent implements OnInit {
       }
       this.api.postPizza(this.productForm.value).subscribe({
         next: (res) => {
+          // this.pizzaList.push(res);
           console.log(res);
           alert('Product added successfully');
           this.productForm.reset();
